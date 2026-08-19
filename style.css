@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    background: rgba(255, 255, 255, .8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style-type: none;
+    user-select: none;
+    cursor: pointer;
+
+    height: 44px;
+    width: auto;
+
+    padding: 0 22px;
+    margin: 0 120px;
+    font-size: 12px;
+}
+
+.navbar ul li {
+    padding: 0 8px;
+}
+
+.navbar ul li i {
+    font-size: 17px;
+}
+
+/* Section */
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* Hero Section */
+
+.heroSection {
+    /* display: flex;
+    justify-content: center; */
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+
+    background-image: url(./Assets/hero\ 3\ img.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 48px 0 56px;
+    z-index: 1;
+}
+
+.heroContent h2 {
+    font-size: 56px;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    letter-spacing: -.005em;
+}
+
+.heroContent p {
+    max-width: 570px;
+    margin-top: 6px;
+
+    font-size: 28px;
+    letter-spacing: .007em;
+}
+
+.heroContent button {
+    padding: 11px 21px;
+    margin-top: 17px;
+
+    background: #0071E3;
+    color: #fff;
+
+    font-size: 20px;
+
+    border: none;
+    border-radius: 22px;
+    outline: none;
+}
+
+.iPhone {
+    background-image: url(./Assets/hero_iphone_family__be5jkzxszb1e_large.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Mac {
+    background-image: url(./Assets/hero_macbook_air_m5__eb1idggd120y_large.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+}
+
+#shop,
+#buy {
+    background: transparent;
+    border: 1px solid #0071E3;
+    color: #0071E3;
+    cursor: pointer;
+}
+
+#shop:hover,
+#buy:hover {
+    background: #0071E3;
+    color: #fff;
+}
+
+
+/* .mainContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+
+/* Left Right Cards */
+
+.twoContainer {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+/* Change card background  */
+
+.iPad {
+    background-image: url(./Assets/promo_ipad_air_m4__bgcv7t286k8y_large.jpg);
+}
+
+.watch {
+    background-image: url(./Assets/promo_apple_watch_series_11__gnlwqxe1jlu2_large.jpg);
+}
+
+.iPadPro {
+    background-image: url(./Assets/promo_ipad_pro__emtduc920o02_large.jpg);
+    color: #f5f5f7;
+}
+
+.macPro {
+    background-image: url(./Assets/promo_macbook_pro__c9td9w1mc8ia_large.jpg);
+    color: #f5f5f7;
+}
+
+.tradeIn {
+    background-image: url(./Assets/promo_iphone_tradein__e4hrjxmgmf0i_large.jpg);
+}
+
+.card {
+    background-image: url(./Assets/promo_apple_card__d8xz4kd4evwy_large.jpg);
+}
+
+.iPad,
+.watch,
+.iPadPro,
+.macPro,
+.tradeIn,
+.card {
+    min-height: 580px;
+}
+
+/* Cards Content */
+
+.titleContent {
+    display: flex;
+    align-items: center;
+}
+
+.titleContent h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.titleContent p {
+    font-size: 21px;
+    letter-spacing: .011em;
+    line-height: 1.1904761905;
+}
+
+.iPad .titleContent h2 span {
+    font-style: italic;
+}
+
+.watch .titleContent h2 span {
+    font-weight: 500;
+}
+
+.iPadPro .titleContent p {
+    max-width: 295px;
+
+}
+
+.tradeIn .titleContent p {
+    max-width: 265px;
+}
+
+.card .titleContent p {
+    max-width: 290px;
+}
+
+.titleContent button {
+    margin-top: 12px;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/* Endless Entertainment */
+.endless {
+    background: #f5f5f7;
+    padding-top: 53px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.endlessContent h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.endlessImg {
+    position: relative;
+
+    background-image: url(./Assets/1960x1044sr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 930px;
+    height: 523px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.imgContent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    position: absolute;
+    bottom: 45px;
+    left: 70px;
+
+
+    font-size: 20px;
+    color: #f5f5f7;
+}
+
+.imgContent button {
+    font-size: 18px;
+    
+    padding: 11px 21px;
+
+    border: none;
+    border-radius: 24px;
+
+}
+
+
+.imgContent button:hover {
+    background: #fff;
+    cursor: pointer;
+}
